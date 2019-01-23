@@ -1,4 +1,4 @@
-# Clever Commenter: Let Us Try More Apps
+# Commenter
 This repo contrains of the **Commenter** project in Google AI ML Winter Camp.
 
 ## What Problem We solve
@@ -6,11 +6,28 @@ Comments are one of the most important ways for App downloaders to understand th
 
 ## What is "Commenter"
 **Commenter** is an interesting and powerful automatic comment generator. It consists of the following modules:
-- **Key-words Extraction**: This module uses the structure data of the app (such as `Category`, `Age group`, `Price`) to find the most relevant apps, and then extracts the key-words of the related apps as an alternative of the newly released App. 
+- **Key-words Extraction**: This module uses the structure data of the app (such as `Category`, `Age group`, `Price`) to find the most relevant apps based on Social Network theory instead of basic low level similarity. Then extracts the key-words of the related apps as an alternative of the newly released App. 
 - **Key-words Based Review Generator**: This module generates a review based on give key-words. Key-words are extracted by the first module or input from the App designers.
 - **Review Sentiment Transfer**: This module transfer a negative review into a positive review, and vice versa. In this way, "Commenter" can control the emotion of the generated reviews.
 
 ### Module1: Key-words Extraction
+The model aims to find APP's most similar APPs based on Social Network theory instead of basic low level similarity, then extract these APP's keywords.
+
+#### 1. Dataset
+In our example, we use [Google Play Store Apps Dataset](https://www.kaggle.com/lava18/google-play-store-apps#googleplaystore_user_reviews.csv) as our source data.
+
+#### 2. keywords extracting model
+By run the follwing files, you can get each APP's 10 most similar APP's keywords.
+
+<code>lowlevel_similarity_to_highlevel_similarity_model.ipynb</code> can train and predict APP's high level similarity with other existing APPs, by the Soical Network theory
+
+<code>get_pmi_matrix.ipynb</code> can calculate each existing APP's high level similarity , by the Soical Network theory
+
+<code>change_pmi_matrix_to_similar_app.ipynb</code> can get each APP's 10 most similar APP's name
+
+<code>convert_orl_data_to_keyword_by_Category.ipynb</code> can get each category APPs' top non-emotional keywords and emotional keywords
+
+<code>convert_orl_data_to_keyword_of_each_app_by_similar_app.ipynb</code> can get each APP's most similar APPs' top non-emotional keywords and emotional keywords
 
 ****************************************
 
