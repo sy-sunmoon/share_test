@@ -6,11 +6,11 @@ Comments are one of the most important ways for App downloaders to understand th
 
 ## What is "Commenter"
 **Commenter** is an interesting and powerful automatic comment generator. It consists of the following modules:
-- **Key-word Extraction**: This module uses the structure data of the app (such as `Category`, `Age group`, `Price`) to find the most relevant app, and then extracts the key-words of the related app as an alternative of the newly released App. 
-- **Key-word Based Review Generator**: This module generates a review based on give key-words. Key-words are extracted by the first module or input from the App designers.
+- **Key-words Extraction**: This module uses the structure data of the app (such as `Category`, `Age group`, `Price`) to find the most relevant app, and then extracts the key-words of the related app as an alternative of the newly released App. 
+- **Key-words Based Review Generator**: This module generates a review based on give key-words. Key-words are extracted by the first module or input from the App designers.
 - **Review Sentiment Transfer**: This module transfer a negative review into a positive review, and vice versa. In this way, "Commenter" can control the emotion of the generated reviews.
 
-## Module1: Key-word Extraction
+## Module1: Key-words Extraction
 
 ## Module2: Key-words Based Review Generator
 The model aims to generate fluent and reasonable reviews based on the input keywords describing the product.
