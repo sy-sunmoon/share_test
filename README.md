@@ -95,4 +95,4 @@ This code is based on the following paper:
 <i> "Dynamic Memory Networks for Visual and Textual Question Answering". Caiming Xiong, Stephen Merity, Richard Socher. 2017. [arXiv](https://arxiv.org/abs/1603.01417) </i>
 
 ## Author
-Yue Sun (孙悦）, WeiTu（涂威）, FuliLuo（[罗福莉](https://scholar.google.com/citations?user=1s79Z5cAAAAJ&hl=zh-CN)）
+Yue Sun (孙悦）, WeiTu（涂威）, [FuliLuo](https://scholar.google.com/citations?user=1s79Z5cAAAAJ&hl=zh-CN)（罗福莉）
