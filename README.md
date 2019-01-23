@@ -29,15 +29,11 @@ Run preprocess.py as following, and the preprocessed files are stored in the <co
 python3 preprocess.py --load_data data/source_data/ --save_data data/save_data/
 ```
 
-***************************************************************
-
 ### Train
 To train a model, go to the review generation folder and run the following command:
 ```bash
 python3 train.py --gpus gpu_id --config config.yaml --log log_name 
 ```
-
-***************************************************************
 
 ### Test
 To test the well-trained model, go to the review generation folder and run the following command:
