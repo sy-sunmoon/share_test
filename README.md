@@ -1,4 +1,4 @@
-# Clever Commenter: Let Us Try More Apps
+# Clever Commenter: Let us Try More Apps
 This repo contrains of the **Commenter** project in Google AI ML Winter Camp.
 
 ## What Problem We solve
