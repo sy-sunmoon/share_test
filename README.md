@@ -1,6 +1,18 @@
-# Review Generator
+# Commenter
+This repo contrains of the "Commenter" project in Google AI ML Winter Camp.
 
-## Key-words Based Review Generator
+## What Problem We solve
+Comments are one of the most important ways for App downloaders to understand this App. However, many newly released (online) Apps have few comments, which seriously affects the user's interest and enthusiasm of those apps. Therefore, in order to **help App downloaders better understand the newly released Apps**, we designed an automatic comment generator called "Commenter".
+
+## What is "Commenter"
+`Commenter` is an interesting and powerful automatic comment generator. It consists of the following modules:
+- **Key-word Extraction**: This module uses the structured data of the app (such as `Category`, `Age group`, `Price`) to find the most relevant app, and then extracts the key-words of the related app as an alternative of the newly released App. 
+- **Key-word Based Review Generator**: This module generates a review based on give key-words. Key-words are extracted by the first module or input from the App designers.
+- **Review Sentiment Transfer**: This module transfer a negative review into a positive review, and vice versa. In this way, "Commenter" can control the emotion of the generated reviews.
+
+## Module1: Key-word Extraction
+
+## Module2: Key-words Based Review Generator
 The model aims to generate fluent and reasonable reviews based on the input keywords describing the product.
 
 ***************************************************************
@@ -35,7 +47,7 @@ python3 predict.py --gpus gpu_id --config config.yaml --restore checkpoint_path 
 
 ***************************************************************
 
-## Review Sentiment Transfer
+## Module3: Review Sentiment Transfer
 
 The model learns to transfer a negative sentiment review into a positive one without any parallel data.
 
