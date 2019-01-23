@@ -2,7 +2,7 @@
 This repo contrains of the **Commenter** project in Google AI ML Winter Camp.
 
 ## What Problem We solve
-Comments are one of the most important ways for App downloaders to understand this App. However, many newly released (online) Apps have few comments, which seriously affects the user's interest and enthusiasm of those apps. Therefore, in order to **help App downloaders better understand the newly released Apps**, we designed an automatic comment generator called "Commenter".
+Comments are one of the most important ways for App downloaders to understand this App. However, many newly released (online) Apps have few comments, which seriously affects the user's interest and enthusiasm of those apps. Therefore, in order to **help App downloaders better understand the newly released Apps**, we designed an automatic comment generator called "**Commenter**".
 
 ## What is "Commenter"
 **Commenter** is an interesting and powerful automatic comment generator. It consists of the following modules:
