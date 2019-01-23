@@ -15,7 +15,7 @@ Comments are one of the most important ways for App downloaders to understand th
 ### Module2: Key-words Based Review Generator
 The model aims to generate fluent and reasonable reviews based on the input keywords describing the product.
 
-#### Data Preprocess
+1. #### Data Preprocess
 Before running the preprocess.py, your should provide the following files in the <code>data/source_data/</code> folder:
 
 - <code>XX.src1</code> is the file of the input keywords.
@@ -27,13 +27,13 @@ Run preprocess.py as following, and the preprocessed files are stored in the <co
 python3 preprocess.py --load_data data/source_data/ --save_data data/save_data/
 ```
 
-#### Train
+2. #### Train
 To train a model, go to the review generation folder and run the following command:
 ```bash
 python3 train.py --gpus gpu_id --config config.yaml --log log_name 
 ```
 
-#### Test
+3. #### Test
 To test the well-trained model, go to the review generation folder and run the following command:
 ```bash
 python3 predict.py --gpus gpu_id --config config.yaml --restore checkpoint_path --log log_name 
@@ -43,7 +43,7 @@ python3 predict.py --gpus gpu_id --config config.yaml --restore checkpoint_path 
 
 The model learns to transfer a negative sentiment review into a positive one without any parallel data.
 
-#### Data Preprocess
+1. #### Data Preprocess
 After running the preprocess/format_data.py, it can generate three files in the <code>sentiment_transfer</code> folder:
 
 <code>train.0</code>, <code>dev.0</code>, <code>test.0</code> denotes the negative train/dev/test files
@@ -51,14 +51,14 @@ After running the preprocess/format_data.py, it can generate three files in the 
 <code>train.1</code>, <code>dev.1</code>, <code>test.1</code> denotes the positive train/dev/test files
 <br>
 
-#### Train
+2. #### Train
 
 To train a model, go to the sentiment-transfer folder and run the following command:
 ```bash
 python style_transfer.py --train ../data/sentiment_transfer/train --dev ../data/sentiment_transfer/dev --output ../tmp/sentiment.dev --vocab ../tmp/google.vocab --model ../tmp/model
 ```
 
-#### Test
+3. #### Test
 
 - ##### Test file has sentiment labels
 If the test file has sentiment labels, just run the following command:
