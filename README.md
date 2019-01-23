@@ -1,11 +1,11 @@
 # Commenter
-This repo contrains of the "Commenter" project in Google AI ML Winter Camp.
+This repo contrains of the **Commenter** project in Google AI ML Winter Camp.
 
 ## What Problem We solve
 Comments are one of the most important ways for App downloaders to understand this App. However, many newly released (online) Apps have few comments, which seriously affects the user's interest and enthusiasm of those apps. Therefore, in order to **help App downloaders better understand the newly released Apps**, we designed an automatic comment generator called "Commenter".
 
 ## What is "Commenter"
-`Commenter` is an interesting and powerful automatic comment generator. It consists of the following modules:
+**Commenter** is an interesting and powerful automatic comment generator. It consists of the following modules:
 - **Key-word Extraction**: This module uses the structured data of the app (such as `Category`, `Age group`, `Price`) to find the most relevant app, and then extracts the key-words of the related app as an alternative of the newly released App. 
 - **Key-word Based Review Generator**: This module generates a review based on give key-words. Key-words are extracted by the first module or input from the App designers.
 - **Review Sentiment Transfer**: This module transfer a negative review into a positive review, and vice versa. In this way, "Commenter" can control the emotion of the generated reviews.
