@@ -3,9 +3,9 @@ This repo contrains of the **Commenter** project in Google AI ML Winter Camp.
 
 ## 目录
 
-* [What Problem We solve](## What Problem We solve)
-* [What is "Commenter"](## What is "Commenter")
-* [Cite](## Cite)
+* [What Problem We solve](#What Problem We solve)
+* [What is "Commenter"](#What is "Commenter")
+* [Cite](#Cite)
 
 
 ## What Problem We solve
