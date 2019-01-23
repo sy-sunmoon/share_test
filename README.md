@@ -9,7 +9,7 @@ The model aims to generate fluent and reasonable reviews based on the input keyw
 Before running the preprocess.py, your should provide the following files in the <code>data/source_data/</code> folder:
 
 - <code>XX.src1</code> is the file of the input keywords.
-- <code>XX.src2</code> is the file of the concepts extracted from ConceptNet. 
+- <code>XX.src2</code> is the file of the concepts extracted from [ConceptNet](http://conceptnet.io/). 
 - <code>XX.tgt</code> is the file of the output reviews.
 
 Run preprocess.py as following, and the preprocessed files are stored in the <code>data/save_data/</code> folder.
