@@ -15,8 +15,6 @@ Comments are one of the most important ways for App downloaders to understand th
 ## Module2: Key-words Based Review Generator
 The model aims to generate fluent and reasonable reviews based on the input keywords describing the product.
 
-***************************************************************
-
 ### Data Preprocess
 Before running the preprocess.py, your should provide the following files in the <code>data/source_data/</code> folder:
 
