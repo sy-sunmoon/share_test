@@ -41,12 +41,6 @@ The model learns to transfer a negative sentiment review into a positive one wit
 
 ***************************************************************
 
-## Review Sentiment Transfer
-
-The model learns to transfer a negative sentiment review into a positive one without any parallel data.
-
-***************************************************************
-
 ### Data Preprocess
 After running the preprocess/format_data.py, it can generate three files in the <code>sentiment_transfer</code> folder:
 
