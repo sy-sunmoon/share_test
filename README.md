@@ -93,3 +93,6 @@ This code is based on the following paper:
 <i> "End-To-End Memory Networks". Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, Rob Fergus. NIPS 2015. [arXiv](https://arxiv.org/abs/1503.08895) </i>
 
 <i> "Dynamic Memory Networks for Visual and Textual Question Answering". Caiming Xiong, Stephen Merity, Richard Socher. 2017. [arXiv](https://arxiv.org/abs/1603.01417) </i>
+
+## Author
+Yue Sun (孙悦)   WeiTu（涂威）  FuliLuo（罗福莉）
