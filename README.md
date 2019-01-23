@@ -1,19 +1,18 @@
 # Review Generator
 
 ## Key-words Based Review Generator
-The model learns to transfer a negative sentiment review into a positive one without any parallel data.
+The model aims to generate fluent and reasonable reviews based on the input keywords describing the product.
 
 ***************************************************************
 
 ### Data Preprocess
-Before running the preprocess.py, your should provide the following files in the <code>data/source_data</code> folder:
+Before running the preprocess.py, your should provide the following files in the <code>data/source_data/</code> folder:
 
-<code>XX.src1</code> is the keyword file 
+- <code>XX.src1</code> is the file of the input keywords.
+- <code>XX.src2</code> is the file of the concepts extracted from ConceptNet. 
+- <code>XX.tgt</code> is the file of the output reviews.
 
-<code>XX.src2</code> is the concept file 
-
-<code>XX.tgt</code> is the review file
-
+Run preprocess.py as following, and the preprocessed files are stored in the <code>data/save_data/</code> folder.
 ```bash
 python3 preprocess.py --load_data data/source_data/ --save_data data/save_data/
 ```
@@ -23,16 +22,22 @@ python3 preprocess.py --load_data data/source_data/ --save_data data/save_data/
 ### Train
 To train a model, go to the review generation folder and run the following command:
 ```bash
-python3 train.py --gpus gps_id --log log_name --config config.yaml 
+python3 train.py --gpus gpu_id --config config.yaml --log log_name 
 ```
 
 ***************************************************************
 
 ### Test
-To test the model, go to the review generation folder and run the following command:
+To test the well-trained model, go to the review generation folder and run the following command:
 ```bash
-python3 predict.py --gpus gps_id --log log_name --config config.yaml --restore checkpoint.pt
+python3 predict.py --gpus gpu_id --config config.yaml --restore checkpoint_path --log log_name 
 ```
+
+***************************************************************
+
+## Review Sentiment Transfer
+
+The model learns to transfer a negative sentiment review into a positive one without any parallel data.
 
 ***************************************************************
 
