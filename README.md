@@ -47,7 +47,7 @@ python3 predict.py --gpus gpu_id --config config.yaml --restore checkpoint_path 
 
 The model learns to transfer a negative sentiment review into a positive one without any parallel data.
 
-1. #### Data Preprocess
+#### 1. Data Preprocess
 After running the preprocess/format_data.py, it can generate three files in the <code>sentiment_transfer</code> folder:
 
 <code>train.0</code>, <code>dev.0</code>, <code>test.0</code> denotes the negative train/dev/test files
@@ -55,14 +55,14 @@ After running the preprocess/format_data.py, it can generate three files in the 
 <code>train.1</code>, <code>dev.1</code>, <code>test.1</code> denotes the positive train/dev/test files
 <br>
 
-2. #### Train
+#### 2. Train
 
 To train a model, go to the sentiment-transfer folder and run the following command:
 ```bash
 python style_transfer.py --train ../data/sentiment_transfer/train --dev ../data/sentiment_transfer/dev --output ../tmp/sentiment.dev --vocab ../tmp/google.vocab --model ../tmp/model
 ```
 
-3. #### Test
+#### 3. Test
 
 - ##### Test file has sentiment labels
 If the test file has sentiment labels, just run the following command:
